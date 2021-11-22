@@ -12,7 +12,8 @@ Pod::Spec.new do |s|
   s.default_subspec = "Core"
   s.swift_version = '5.3'
   s.cocoapods_version = '>= 1.5.0'
-
+  s.dependency 'swift-algorithms', :git => 'https://github.com/apple/swift-algorithms'
+  s.dependency 'swift-numerics', :git => 'https://github.com/apple/swift-numerics'
   s.subspec "Core" do |ss|
     ss.source_files  = "Source/Charts/**/*.swift"
   end
